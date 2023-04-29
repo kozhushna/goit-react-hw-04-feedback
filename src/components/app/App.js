@@ -24,9 +24,8 @@ const App = () => {
       case 'bad':
         setBad(prevState => prevState + 1);
         break;
-
       default:
-        break;
+        throw Error(`Does not supported '${option}'`);
     }
   };
 
